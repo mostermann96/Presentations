@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.4.4)  14 MAY 2019 11:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.4.4)  17 MAY 2019 12:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -69,7 +69,26 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `Ausarbeitung.toc'.
 
- [2] [3] (./Ausarbeitung.aux) ) 
+ [2]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+
+Overfull \hbox (5.0839pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/n/10 Math-e-matiker wrde es als seine Ent-deck-ung verkaufen, diese 
+Formel preiszugeben.
+ []
+
+[3] (./Ausarbeitung.aux) ) 
 Here is how much of TeX's memory you used:
  237 strings out of 494881
  2591 string characters out of 6179628
@@ -77,6 +96,6 @@ Here is how much of TeX's memory you used:
  3633 multiletter control sequences out of 15000+600000
  7895 words of font info for 28 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 23i,6n,18p,919b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,6n,18p,922b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Ausarbeitung.dvi (4 pages, 4000 bytes).
+Output written on Ausarbeitung.dvi (4 pages, 4948 bytes).

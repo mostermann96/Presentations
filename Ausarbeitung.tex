@@ -11,9 +11,9 @@
 \pagenumbering{arabic}
 
 \section{Abstract}
-Diese Ausarbeitung ist eine Einführung in Zero Knowledge Proofs.
-Zuerst wird die Grundidee und Motivation anhand des Beispiels "Alibabas H\"ohle" erl\"autert, um die von der Rundenzahl abh\"angigen Wahrscheinlichkeiten von Vollst\"andigkeit und Korrektheit zu veranschaulichen, sowie ersten Bezug auf Simulierbarkeit zu nehmen. Anhand des interaktiven Protokolls der quadratischen Reste wird sowohl der Protokollablauf verdeutlicht, als auch die Korrektheit der vorkommenden Formeln beispielsweise behandelt. Daraus folgt auch der Begriff der Simulierbarkeit, welcher für die F\"ahigkeit steht ein Transkript der Beweisrunden ohne Kenntnis des Geheimnisses erzeugen zu können, das (fast) nicht von einem echten Transkript zu unterscheiden ist. Vor allem im Rahmen von Signaturen ist es jedoch nicht m\"oglich die Herausforderungen(Challenges) der verifizierenden Partei einzuholen, mit welchen Bedingungen diese generiert werden wird ebenfalls behandelt. 
-Zuletzt werden die m\"oglichen Anwendungen und die damit zusammenh\"angenden Angriffsvektoren betrachtet. Dabei gilt die gr\"oßte Aufmerksamkeit der Schw\"ache gegen Man-in-the-middle Angriffe, die sich durch zeitliche Rahmenbedingungen stark reduzieren l\"asst. Abschlie\ss{}end wird nochmal veranschaulicht, wieso Zero Knowledge Proofs sich besonders als Subprotokolle eignen.
+Diese Ausarbeitung ist eine Einführung in Zero-Knowledge Proofs.
+Zuerst wird die Grundidee und Motivation anhand des Beispiels "Alibabas H\"ohle" erl\"autert, um die von der Rundenzahl abh\"angigen Wahrscheinlichkeiten von Vollst\"andigkeit und Korrektheit zu veranschaulichen, sowie ersten Bezug auf Simulierbarkeit zu nehmen. Anhand des interaktiven Protokolls der quadratischen Reste wird sowohl der Protokollablauf verdeutlicht, als auch die Korrektheit der vorkommenden Formeln beispielsweise behandelt. Daraus folgt auch der Begriff der Simulierbarkeit, welcher für die F\"ahigkeit steht ein Transkript der Beweisrunden ohne Kenntnis des Geheimnisses erzeugen zu können, das (fast) nicht von einem echten Transkript zu unterscheiden ist. Vor allem im Rahmen von Signaturen ist es jedoch nicht m\"oglich die Herausforderungen(Challenges) der verifizierenden Partei einzuholen, mit welchen Bedingungen diese generiert werden wird ebenfalls behandelt. \\
+Zuletzt werden die m\"oglichen Anwendungen und die damit zusammenh\"angenden Angriffsvektoren betrachtet. Dabei gilt die gr\"oßte Aufmerksamkeit der Schw\"ache gegen Man-in-the-middle Angriffe, die sich durch zeitliche Rahmenbedingungen stark reduzieren l\"asst. Abschlie\ss{}end wird nochmal veranschaulicht, wieso Zero-Knowledge Proofs sich auf Grund der vorher genannten Punkte besonders als Subprotokolle eignen.
 
 
 \newpage
@@ -23,6 +23,12 @@ Zuletzt werden die m\"oglichen Anwendungen und die damit zusammenh\"angenden Ang
 \newpage 
 
 \section{Einf\"uhrung}
+
+Schon im Jahr 1535 fand der italienische Mathematiker Niccolo Tartaglia die erste Verwendung für Zero-Knowledge Proofs. Er entdeckte eine Lösungsformel für Polynome 3. Grades und wollte dies beweisen, ohne, aus Furcht ein anderer Mathematiker würde es als seine Entdeckung verkaufen, diese Formel preiszugeben. Dazu schickte er Briefe an die Kollegen seines Faches, in denen er sie um "Aufgaben" bat, welche sie ihm wieder zukommen lie\ss{}en. Da er die Lösungsformel kannte, konnte er die Aufgaben ohne Probleme lösen, somit beweisen, dass er im Besitz der korrekten Formel war und anschlie\ss{}end als seine Entdeckung vermarkten. \\
+Wie man hier erkennen kann, dienen Zero-Knowledge Proofs dazu, als Beweiser( auch Prover/ P genannt) eine
+verifizierende Person(auch Verifier/ V genannt) vom Kenntnis eines Geheimnisses zu überzeugen, ohne dieses preiszugeben.
+
+
 \section{Grundlagen}
 \section{Protokolle}
 \subsection{Auflistung}
