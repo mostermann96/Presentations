@@ -1,0 +1,315 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{anyt/global//global/global}
+  \entry{BM89}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BM}{%
+         family={Bellare},
+         familyi={B\bibinitperiod},
+         given={Mihir},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Micali},
+         familyi={M\bibinitperiod},
+         given={Silvio},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMMS1}
+    \strng{fullhash}{BMMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BM89}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{547 \bibrangedash  560}
+    \field{title}{Non-interactive oblivious transfer and applicaiions}
+    \field{journaltitle}{Advances in Cryptology - CRYPT0 ‘89}
+    \field{year}{1989}
+  \endentry
+
+  \entry{BG89}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BOM}{%
+         family={Ben-Or},
+         familyi={B\bibinithyphendelim O\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Goldwasser},
+         familyi={G\bibinitperiod},
+         given={Shafi},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Killian},
+         familyi={K\bibinitperiod},
+         given={Joe},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Widgerson},
+         familyi={W\bibinitperiod},
+         given={Avi},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BOM+1}
+    \strng{fullhash}{BOMGSKJWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BO+89}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{498 \bibrangedash  507}
+    \field{title}{Eficient identification schemes using two prover interactive
+  proofs}
+    \field{journaltitle}{Advances in Cryptology - CRYPT0 ‘89}
+    \field{year}{1989}
+  \endentry
+
+  \entry{GMIR85}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GS}{%
+         family={Goldwasser},
+         familyi={G\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+      {{hash=MS}{%
+         family={Micali},
+         familyi={M\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+      {{hash=RS}{%
+         family={Rackoff},
+         familyi={R\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+    }
+    \strng{namehash}{GSMSRS1}
+    \strng{fullhash}{GSMSRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{GMR85}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{pages}{291 \bibrangedash  304}
+    \field{title}{The knowledge complexity of interactive proof-systems}
+    \field{journaltitle}{Proceedings of the seventeenth annual ACM symposium on
+  Theory of computin}
+    \field{year}{1985}
+  \endentry
+
+  \entry{PrSa14}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GS}{%
+         family={Garg},
+         familyi={G\bibinitperiod},
+         given={Sanjam},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Nakkiran},
+         familyi={N\bibinitperiod},
+         given={Preetum},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GSNP1}
+    \strng{fullhash}{GSNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{GN}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Lecture 10: Non-Interactive Zero-Knowledge (NIZK) and the
+  Hidden-Bit Model}
+    \verb{url}
+    \verb https://people.eecs.berkeley.edu/~sanjamg/classes/cs276-fall14/scribe
+    \verb /lec10.pdf
+    \endverb
+    \field{journaltitle}{CS 276 – Cryptography}
+  \endentry
+
+  \entry{GO90}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GO}{%
+         family={Goldreich},
+         familyi={G\bibinitperiod},
+         given={Oded},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=OY}{%
+         family={Oren},
+         familyi={O\bibinitperiod},
+         given={Yair},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GOOY1}
+    \strng{fullhash}{GOOY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{GO90}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{pages}{1\bibrangedash 32}
+    \field{title}{Definitions and Properties of Zero-Knowledge Proof Systems}
+    \field{journaltitle}{Journal of Cryptography}
+    \field{year}{1990}
+  \endentry
+
+  \entry{GQ89}{article}{}
+    \name{author}{2}{}{%
+      {{hash=QJJ}{%
+         family={Quisquater},
+         familyi={Q\bibinitperiod},
+         given={Jean-Jacques},
+         giveni={J\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Guillous},
+         familyi={G\bibinitperiod},
+         given={Louis},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{QJJGL1}
+    \strng{fullhash}{QJJGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{QG89}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \field{pages}{628 \bibrangedash  631}
+    \field{title}{How to explain Zero-Knowledge Protocols to your children}
+    \field{journaltitle}{Advances in Cryptology - CRYPT0 ‘89}
+    \field{year}{1989}
+  \endentry
+
+  \entry{RS91}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RS}{%
+         family={Rackoff},
+         familyi={R\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SDR}{%
+         family={Simon},
+         familyi={S\bibinitperiod},
+         given={D.\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RSSDR1}
+    \strng{fullhash}{RSSDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{RS91}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{pages}{433 \bibrangedash  445}
+    \field{title}{Non-Interactive Zero-Knowledge Proof of Knowledge and Chosen
+  Ciphertext Attack}
+    \field{journaltitle}{Advances in Cryptology - CRYPT0 ‘91}
+    \field{year}{1991}
+  \endentry
+
+  \entry{Wik2}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SO}{%
+         family={Source},
+         familyi={S\bibinitperiod},
+         given={Open},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SO1}
+    \strng{fullhash}{SO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Sou19}
+    \field{extraalpha}{1}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Non-interactive Zero-Knowledge Proof}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Non-interactive_zero-knowledge_proof
+    \endverb
+    \field{journaltitle}{-}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Wik1}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SO}{%
+         family={Source},
+         familyi={S\bibinitperiod},
+         given={Open},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SO1}
+    \strng{fullhash}{SO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Sou19}
+    \field{extraalpha}{2}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Zero-Knowledge Proof}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Zero-knowledge_proof
+    \endverb
+    \field{journaltitle}{-}
+    \field{year}{2019}
+  \endentry
+
+  \entry{KZKP}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ZKVK}{%
+         family={Zero-Knowledge-Verfahren},
+         familyi={Z\bibinithyphendelim K\bibinithyphendelim V\bibinitperiod},
+         given={Komplexpraktikum},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZKVK1}
+    \strng{fullhash}{ZKVK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{ZKV11}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{title}{Zero-Knowledge-Verfahren}
+    \verb{url}
+    \verb https://tu-dresden.de/ing/informatik/sya/ps/ressourcen/dateien/studiu
+    \verb m/materialien/mat_kp_datensicherheit/v11_doku.pdf?lang=de
+    \endverb
+    \field{journaltitle}{Komplexpraktikum}
+    \field{year}{2011}
+  \endentry
+\enddatalist
+\endinput

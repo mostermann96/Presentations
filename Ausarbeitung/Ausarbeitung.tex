@@ -1,4 +1,8 @@
 \documentclass {article}
+
+\usepackage[backend=bibtex,style=alphabetic]{biblatex}
+\bibliography{lit}
+
 \title{Zero-Knowledge Proofs}
 \author{Max Ostermann}
 \date{28.05.2019}
@@ -29,10 +33,12 @@ Schon im Jahr 1535 fand der italienische Mathematiker Niccolo Tartaglia die erst
 Wie man hier erkennen kann, dienen Zero-Knowledge Proofs dazu, als Beweiser, auch Prover/ P genannt, eine
 verifizierende Person, auch Verifier/ V genannt, vom Kenntnis eines Geheimnisses zu überzeugen, ohne dieses preiszugeben. \\ 
 
-Um die meisten Eigenschaften von Zero-Knowledge Proofs zu veranschaulichen, stellten Quisquater und Guillou in "How to explain Zero-Knowledge Protocols to your Children" [GQ89] das Konzept von Alibabas H\"ohle vor. Alibabas H\"ohle hat einen Vorraum, hinter dem ein Rundgang liegt, in dessen Mitte eine magische T\"ur ist. Diese T\"ur l\"asst sich nur durch Kenntnis der geheimen Passphrase \"offnen. Alice kennt dieses Geheimnis, Bob jedoch nicht. Nun m\"ochte Alice Bob beweisen, dass sie dieses Geheimnis kennt, ohne Bob eben jenes zu offenbaren. Also befiehlt sie Bob vor der H\"ohle zu warten, w\"ahrend sie selbst in einen der beiden Eing\"ange des Rundgangs hineingeht. Bob betritt daraufhin den Vorraum und ruft aus welcher Seite Alice den Rundgang verlassen soll. Wenn Alice den Gang durch diese Seite betreten hat, dreht sie um und kommt zu dieser Seite wieder heraus. Hat sie jedoch den Gang durch den anderen Eingang betreten muss sie nun die Passphrase verwenden um durch die T\"ur gehen zu k\"onnen und in dem, von Bob gewünschten, Ausgang zu erscheinen. Nach einer einzigen Durchf\"uhrung dieses Spiels ist Bob zurecht noch nicht \"uberzeugt, doch vertraut er Alice nach jeder neuen Runde etwas mehr und ist nach einigen Runden \"uberzeugt, dass Alice die geheime Passphrase kennt und es ist klar, dass Bob keinerlei neue Informationen \"uber die Passphrase erhalten hat. \\  Nun m\"ochte Bob dieses Ph\"anomen mit der Welt teilen und zeichnet seine Sicht mit einer Kamera auf, doch stellt er fest, dass niemand ihm glauben würde, da er das Video auch einfach selber f\"alschen k\"onnte indem er sich entweder mit einem Freund abspricht in welcher Reihenfolge er die Ausg\"ange ausruft oder die fehlerhaften Ergebnisse einfach aus dem Video herausschneidet. 
+Um die meisten Eigenschaften von Zero-Knowledge Proofs zu veranschaulichen, stellten Quisquater und Guillou in "How to explain Zero-Knowledge Protocols to your Children"\cite{GQ89} das Konzept von Alibabas H\"ohle vor.
+Alibabas H\"ohle hat einen Vorraum, hinter dem ein Rundgang liegt, in dessen Mitte eine magische T\"ur ist. Diese T\"ur l\"asst sich nur durch Kenntnis der geheimen Passphrase \"offnen.
+Alice kennt dieses Geheimnis, Bob jedoch nicht.
+Nun m\"ochte Alice Bob beweisen, dass sie dieses Geheimnis kennt, ohne Bob eben jenes zu offenbaren. Also befiehlt sie Bob vor der H\"ohle zu warten, w\"ahrend sie selbst in einen der beiden Eing\"ange des Rundgangs hineingeht. Bob betritt daraufhin den Vorraum und ruft aus welcher Seite Alice den Rundgang verlassen soll. Wenn Alice den Gang durch diese Seite betreten hat, dreht sie um und kommt zu dieser Seite wieder heraus. Hat sie jedoch den Gang durch den anderen Eingang betreten muss sie nun die Passphrase verwenden um durch die T\"ur gehen zu k\"onnen und in dem, von Bob gewünschten, Ausgang zu erscheinen. Nach einer einzigen Durchf\"uhrung dieses Spiels ist Bob zurecht noch nicht \"uberzeugt, doch vertraut er Alice nach jeder neuen Runde etwas mehr und ist nach einigen Runden \"uberzeugt, dass Alice die geheime Passphrase kennt und es ist klar, dass Bob keinerlei neue Informationen \"uber die Passphrase erhalten hat. \\  Nun m\"ochte Bob dieses Ph\"anomen mit der Welt teilen und zeichnet seine Sicht mit einer Kamera auf, doch stellt er fest, dass niemand ihm glauben würde, da er das Video auch einfach selber f\"alschen k\"onnte indem er sich entweder mit einem Freund abspricht in welcher Reihenfolge er die Ausg\"ange ausruft oder die fehlerhaften Ergebnisse einfach aus dem Video herausschneidet. 
 Stellt man die Video die Alice oder Bobs Freunde zeigen nun gegen\"uber stellt man aber fast, dass sich diese kaum voneinander unterscheiden und ein Beobachter dieser Videos keine M\"oglichkeit hat abzuw\"agen, von wem er denn das Geheimnis erlangen kann.
 Diese Eigenschaft wird unter "Simulierbarkeit"(5) n\"aher betrachtet und Alibabas H\"ohle wird in den danach folgenden Abschnitten zur Veranschaulichung entsprechend erweitert.
-
 
 \section{Grundlagen}
 \section{Protokolle}
@@ -45,9 +51,20 @@ Diese Eigenschaft wird unter "Simulierbarkeit"(5) n\"aher betrachtet und Alibaba
 \section{Fazit}
 \section{Quellenverzeichnis}
 
-\begin{thebibliography}
-	\bibitem[KZKP]{Komplexpraktikum Zero-Knowledge Proofs}https://tu-dresden.de/ing/informatik/sya/ps/ressourcen/dateien/studium/				materialien/mat_kp_datensicherheit/v11_doku.pdf?lang=de
-\end{thebibliography}  
+\nocite{BG89}
+\nocite{BM89}
+\nocite{GMIR85}
+\nocite{GO90}
+\nocite{KZKP}
+\nocite{PrSa14}
+\nocite{RS91}
+\nocite{Wik1}
+\nocite{Wik2}
+
+\printbibliography
+
+
+  
 
 
 \end{document}
