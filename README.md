@@ -18,3 +18,5 @@ https://people.eecs.berkeley.edu/~sanjamg/classes/cs276-fall14/scribe/lec10.pdf
 https://en.wikipedia.org/wiki/Zero-knowledge_proof
 
 https://en.wikipedia.org/wiki/Non-interactive_zero-knowledge_proof
+
+https://truben.no/latex/bibtex/#
