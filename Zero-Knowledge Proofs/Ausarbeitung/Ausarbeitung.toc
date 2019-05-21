@@ -6,6 +6,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Grundlagen}{4}% 
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Definitionen}{4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Beweissysteme}{4}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Protokolle}{4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Auflistung}{4}% 
@@ -15,6 +19,10 @@
 \contentsline {section}{\numberline {5}Simulierbarkeit}{4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Non-interactive Zero-Knowledge Proofs}{4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Motivation}{4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Fiat-Shamir Heuristik}{4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Moderne Anwendungen}{4}% 
 \defcounter {refsection}{0}\relax 
