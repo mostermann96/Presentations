@@ -45,47 +45,6 @@
     \field{year}{1989}
   \endentry
 
-  \entry{BG89}{article}{}
-    \name{author}{4}{}{%
-      {{hash=BOM}{%
-         family={Ben-Or},
-         familyi={B\bibinithyphendelim O\bibinitperiod},
-         given={Michael},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=GS}{%
-         family={Goldwasser},
-         familyi={G\bibinitperiod},
-         given={Shafi},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=KJ}{%
-         family={Killian},
-         familyi={K\bibinitperiod},
-         given={Joe},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=WA}{%
-         family={Widgerson},
-         familyi={W\bibinitperiod},
-         given={Avi},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BOM+1}
-    \strng{fullhash}{BOMGSKJWA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{BO+89}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{pages}{498 \bibrangedash  507}
-    \field{title}{Eficient identification schemes using two prover interactive
-  proofs}
-    \field{journaltitle}{Advances in Cryptology - CRYPT0 ‘89}
-    \field{year}{1989}
-  \endentry
-
   \entry{GMIR85}{article}{}
     \name{author}{3}{}{%
       {{hash=GS}{%
@@ -235,56 +194,6 @@
   Ciphertext Attack}
     \field{journaltitle}{Advances in Cryptology - CRYPT0 ‘91}
     \field{year}{1991}
-  \endentry
-
-  \entry{Wik2}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SO}{%
-         family={Source},
-         familyi={S\bibinitperiod},
-         given={Open},
-         giveni={O\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SO1}
-    \strng{fullhash}{SO1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Sou19}
-    \field{extraalpha}{1}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{title}{Non-interactive Zero-Knowledge Proof}
-    \verb{url}
-    \verb https://en.wikipedia.org/wiki/Non-interactive_zero-knowledge_proof
-    \endverb
-    \field{journaltitle}{-}
-    \field{year}{2019}
-  \endentry
-
-  \entry{Wik1}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SO}{%
-         family={Source},
-         familyi={S\bibinitperiod},
-         given={Open},
-         giveni={O\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SO1}
-    \strng{fullhash}{SO1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Sou19}
-    \field{extraalpha}{2}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{title}{Zero-Knowledge Proof}
-    \verb{url}
-    \verb https://en.wikipedia.org/wiki/Zero-knowledge_proof
-    \endverb
-    \field{journaltitle}{-}
-    \field{year}{2019}
   \endentry
 
   \entry{KZKP}{article}{}
