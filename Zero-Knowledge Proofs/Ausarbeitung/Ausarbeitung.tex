@@ -1,6 +1,7 @@
 \documentclass {article}
 
 \usepackage[backend=bibtex,style=alphabetic]{biblatex}
+\usepackage[german]{babel}
 \bibliography{lit}
 
 \title{Zero-Knowledge Proofs}
@@ -14,9 +15,9 @@
 \newpage
 \pagenumbering{arabic}
 
-\section{Abstract}
+\section{Auszug}
 Diese Ausarbeitung ist eine Einführung in Zero-Knowledge Proofs.
-Zuerst wird die Grundidee und Motivation anhand des Beispiels von Alibabas H\"ohle(2) erl\"autert. Dabei werden die von der Rundenzahl abh\"angigen Wahrscheinlichkeiten von Vollst\"andigkeit und Korrektheit(3) veranschaulicht, sowie einen ersten Bezug auf die Simulierbarkeit zu nehmen. Anhand des interaktiven Protokolls der quadratischen Reste wird sowohl der Protokollablauf(4) verdeutlicht, als auch die Korrektheit der vorkommenden Formeln exemplarisch behandelt. Daraus folgt auch der Begriff der Simulierbarkeit(5), welcher für die F\"ahigkeit steht, ein Transkript der Beweisrunden ohne Kenntnis des Geheimnisses erzeugen zu können, das (fast) nicht von einem echten Transkript zu unterscheiden ist. Vor allem im Rahmen von Signaturen ist es jedoch nicht m\"oglich die Herausforderungen(Challenges) der verifizierenden Partei einzuholen, mit welchen Bedingungen diese generiert werden wird ebenfalls behandelt(6). 
+Zuerst wird die Grundidee und Motivation anhand des Beispiels von Alibabas H\"ohle(2) erl\"autert. Dabei werden die von der Rundenzahl abh\"angigen Wahrscheinlichkeiten von Vollst\"andigkeit und Korrektheit(3) veranschaulicht, sowie einen ersten Bezug auf die Simulierbarkeit zu nehmen. Anhand des interaktiven Protokolls der quadratischen Reste wird sowohl der Protokollablauf(4) verdeutlicht, als auch die Korrektheit der vorkommenden Formeln exemplarisch behandelt. Daraus folgt auch der Begriff der Simulierbarkeit(5), welcher für die F\"ahigkeit steht, ein Transkript der Beweisrunden ohne Kenntnis des Geheimnisses erzeugen zu können, das (fast) nicht von einem echten Transkript zu unterscheiden ist. Vor allem im Rahmen von Signaturen ist es jedoch nicht m\"oglich, die Herausforderungen(Challenges) der verifizierenden Partei einzuholen. Mit welchen Bedingungen diese generiert werden wird ebenfalls behandelt(6). 
 Zuletzt werden die m\"oglichen Anwendungen(7) und die damit zusammenh\"angenden Angriffsvektoren(8) betrachtet. Dabei gilt die gr\"oßte Aufmerksamkeit der Schw\"ache gegen Man-in-the-middle Angriffe, die sich durch zeitliche Rahmenbedingungen stark reduzieren l\"asst. Abschlie\ss{}end wird nochmal veranschaulicht, wieso Zero-Knowledge Proofs sich auf Grund der vorher genannten Punkte besonders als Subprotokoll eignen.
 
 
@@ -31,13 +32,15 @@ Zuletzt werden die m\"oglichen Anwendungen(7) und die damit zusammenh\"angenden 
 Schon im Jahr 1535 fand der italienische Mathematiker Niccolo Tartaglia die erste Verwendung für Zero-Knowledge Proofs. Er entdeckte eine Lösungsformel für Polynome 3. Grades und wollte dies beweisen, ohne, aus Furcht ein anderer Mathematiker würde es als seine Entdeckung verkaufen, diese Formel preiszugeben. Dazu schickte er Briefe an die Kollegen seines Faches, in denen er sie um Aufgaben bat, welche sie ihm wieder zukommen lie\ss{}en. Mit seiner L\"osungsformel konnte er die Aufgaben korrekt l\"osen, so beweisen, dass er im Besitz der korrekten Formel war und anschlie\ss{}end als seine Entdeckung vermarkten. \\
 
 Wie man hier erkennen kann, dienen Zero-Knowledge Proofs dazu, als Beweiser, auch Prover/ P genannt, eine
-verifizierende Person, auch Verifier/ V genannt, vom Kenntnis eines Geheimnisses zu überzeugen, ohne dieses preiszugeben. \\ 
+verifizierende Person, auch Verifier/ V genannt, von der Kenntnis eines Geheimnisses zu überzeugen, ohne dieses preiszugeben. \\ 
 
 Um die meisten Eigenschaften von Zero-Knowledge Proofs zu veranschaulichen, stellten Quisquater und Guillous in "How to explain Zero-Knowledge Protocols to your Children"\cite{GQ89} das Konzept von Alibabas H\"ohle vor.
-Alibabas H\"ohle hat einen Vorraum, hinter dem ein Rundgang liegt. In der Mitte dieses Ganges ist eine magische T\"ur. Diese T\"ur l\"asst sich nur durch Kenntnis der geheimen Passphrase \"offnen,
+Alibabas H\"ohle hat einen Vorraum, hinter dem ein Rundgang liegt. In der Mitte dieses Ganges ist eine magische T\"ur. Diese T\"ur l\"asst sich nur mit Kenntnis der geheimen Passphrase \"offnen,
 Alice kennt dieses Geheimnis, Bob jedoch nicht.
-Nun m\"ochte Alice Bob beweisen, dass sie dieses Geheimnis kennt, ohne Bob eben jenes zu offenbaren. Also befiehlt sie Bob vor der H\"ohle zu warten, w\"ahrend sie selbst in einen der beiden Eing\"ange des Rundgangs hineingeht. Bob betritt daraufhin den Vorraum und ruft aus welcher Seite Alice den Rundgang verlassen soll. Wenn Alice den Gang durch diese Seite betreten hat, dreht sie um und kommt zu dieser Seite wieder heraus. Hat sie jedoch den Gang von der anderen Seite betreten, muss sie nun die Passphrase verwenden, um durch die T\"ur gehen zu k\"onnen und in dem, von Bob gewünschten, Ausgang zu erscheinen. Nach einer einzigen Durchf\"uhrung dieses Spiels ist Bob zurecht noch nicht von Alice Wissen \"uberzeugt, da es sich um Zufall handeln k\"onnte. Doch vertraut er Alice nach jeder neuen Runde etwas mehr und ist nach einigen Runden \"uberzeugt, dass Alice die geheime Passphrase kennt, ohne dass Bob neue Informationen \"uber die Passphrase erhalten hat. \\  Nun m\"ochte Bob dieses Ph\"anomen mit der Welt teilen und zeichnet seine Sicht mit einer Kamera auf. Doch stellt er fest, dass niemand ihm glauben würde, da er das Video auch einfach selber f\"alschen k\"onnte, indem er sich entweder mit einem Freund abspricht, in welcher Reihenfolge er die Ausg\"ange ausruft oder die fehlerhaften Ergebnisse einfach aus dem Video herausschneidet. 
-Stellt man die Videos, die Alice oder Bobs Freunde zeigen nun gegen\"uber, zeigt sich, dass sich diese kaum voneinander unterscheiden und ein Beobachter dieser Videos keine M\"oglichkeit hat, abzuw\"agen, von wem er denn das Geheimnis erlangen kann.
+Nun m\"ochte Alice Bob beweisen, dass sie dieses Geheimnis kennt, ohne Bob eben jenes zu offenbaren. Also befiehlt sie Bob vor der H\"ohle zu warten, w\"ahrend sie selbst in einen der beiden Eing\"ange des Rundgangs hineingeht. Bob betritt daraufhin den Vorraum und ruft aus welcher Seite Alice den Rundgang verlassen soll. Wenn Alice den Gang durch diese Seite betreten hat, dreht sie um und kommt zu dieser Seite wieder heraus. Hat sie jedoch den Gang von der anderen Seite betreten, muss sie nun die Passphrase verwenden, um durch die T\"ur gehen zu k\"onnen und in dem von Bob gewünschten Ausgang zu erscheinen. Nach einer einzigen Durchf\"uhrung dieses Spiels ist Bob zurecht noch nicht von Alice Wissen \"uberzeugt, da es sich um Zufall handeln k\"onnte. Doch vertraut er Alice nach jeder neuen Runde etwas mehr und ist nach einigen Runden \"uberzeugt, dass Alice die geheime Passphrase kennt, ohne dass Bob neue Informationen \"uber die Passphrase erhalten hat. \\ 
+
+Nun m\"ochte Bob dieses Ph\"anomen mit der Welt teilen und zeichnet seine Sicht mit einer Kamera auf. Doch stellt er fest, dass niemand ihm glauben würde, da er das Video auch einfach selber f\"alschen k\"onnte, indem er sich entweder mit einem Freund abspricht, in welcher Reihenfolge er die Ausg\"ange ausruft oder die fehlerhaften Ergebnisse einfach aus dem Video herausschneidet. 
+Stellt man die Videos, die Alice oder Bobs Freunde zeigen, nun gegen\"uber, zeigt sich, dass sich diese kaum voneinander unterscheiden und ein Beobachter dieser Videos keine M\"oglichkeit hat abzuw\"agen, von wem er denn das Geheimnis erlangen kann.
 Diese Eigenschaft wird unter "Simulierbarkeit"(5) n\"aher betrachtet und Alibabas H\"ohle wird in den danach folgenden Abschnitten zur Veranschaulichung entsprechend erweitert.
 
 \section{Grundlagen}
