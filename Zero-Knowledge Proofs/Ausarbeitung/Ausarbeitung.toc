@@ -11,13 +11,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Beweissysteme}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Protokolle}{4}% 
+\contentsline {section}{\numberline {4}Simulierbarkeit}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Auflistung}{4}% 
+\contentsline {section}{\numberline {5}Protokolle}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Beispiel: Quadratische Reste}{4}% 
+\contentsline {subsection}{\numberline {5.1}Auflistung}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Simulierbarkeit}{4}% 
+\contentsline {subsection}{\numberline {5.2}Beispiel: Quadratische Reste}{4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Non-interactive Zero-Knowledge Proofs}{4}% 
 \defcounter {refsection}{0}\relax 
