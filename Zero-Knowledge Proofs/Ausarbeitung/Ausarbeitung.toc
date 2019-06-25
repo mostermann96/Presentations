@@ -1,38 +1,52 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {german}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Auszug}{1}% 
+\contentsline {section}{\numberline {1}Abstract}{1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Einf\"uhrung}{3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Grundlagen}{4}% 
+\contentsline {section}{\numberline {3}Grundlagen}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Definitionen}{4}% 
+\contentsline {subsection}{\numberline {3.1}Definitionen}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Beweissysteme}{4}% 
+\contentsline {subsection}{\numberline {3.2}Beweissysteme}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Simulierbarkeit}{4}% 
+\contentsline {section}{\numberline {4}Sicherheitsbeweise mit Hilfe der Simulierbarkeit}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Protokolle}{4}% 
+\contentsline {subsection}{\numberline {4.1}Honest-Verifier Simulator}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Graphisomorphismen}{4}% 
+\contentsline {subsection}{\numberline {4.2}Black-B\IeC {\'o}x Simulator}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Quadratische Reste}{4}% 
+\contentsline {section}{\numberline {5}Protokolle}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Graphf\IeC {\"a}rbbarkeit}{4}% 
+\contentsline {subsection}{\numberline {5.1}Graphisomorphismen}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Existenz von Zero-Knowledge Proofs zu jeder Sprache in NP }{4}% 
+\contentsline {subsection}{\numberline {5.2}Quadratische Reste}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Non-interactive Zero-Knowledge Proofs}{4}% 
+\contentsline {subsection}{\numberline {5.3}Graphf\IeC {\"a}rbbarkeit}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Motivation}{4}% 
+\contentsline {subsection}{\numberline {5.4}Existenz von Zero-Knowledge Proofs zu jeder Sprache in NP }{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Fiat-Shamir Heuristik}{4}% 
+\contentsline {section}{\numberline {6}Non-interactive Zero-Knowledge Proofs}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Moderne Anwendungen}{4}% 
+\contentsline {subsection}{\numberline {6.1}Motivation}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Angriffsvektoren}{4}% 
+\contentsline {subsection}{\numberline {6.2}Fiat-Shamir Heuristik}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Fazit}{4}% 
+\contentsline {section}{\numberline {7}Moderne Anwendungen}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Quellenverzeichnis}{5}% 
+\contentsline {subsection}{\numberline {7.1}Authentifizierung}{5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Blockchain}{5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3}Signaturen}{5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Angriffsvektoren}{5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1}Man-in-the-middle}{5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2}Koordinierte Angreifer}{5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Fazit}{5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Quellenverzeichnis}{6}% 

@@ -189,6 +189,50 @@
     \field{year}{1994}
   \endentry
 
+  \entry{BHHW}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HD}{%
+         family={Hopwood},
+         familyi={H\bibinitperiod},
+         given={Daira},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hornby},
+         familyi={H\bibinitperiod},
+         given={Taylor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bowe},
+         familyi={B\bibinitperiod},
+         given={Sean},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wilcox},
+         familyi={W\bibinitperiod},
+         given={Sean},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HD+1}
+    \strng{fullhash}{HDHTBSWS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Hop+19}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Zcash Protocol Specification}
+    \verb{url}
+    \verb https://github.com/zcash/zips/blob/master/protocol/protocol.pdf
+    \endverb
+    \field{year}{2019}
+    \field{urlday}{14}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
+  \endentry
+
   \entry{GQ89}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=QJJ}{%
