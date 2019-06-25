@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.5.13)  27 MAY 2019 20:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.5.13)  25 JUN 2019 01:43
 entering extended mode
 **./Ausarbeitung.tex
 (Ausarbeitung.tex
@@ -337,6 +337,29 @@ File: babel.def 2019/05/04 3.31 Babel common definitions
 )
 Package babel Info: Making " an active character on input line 135.
 )))
+("C:\Users\Max\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.st
+y"
+Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
+\csq@reset=\count279
+\csq@gtype=\count280
+\csq@glevel=\count281
+\csq@qlevel=\count282
+\csq@maxlvl=\count283
+\csq@tshold=\count284
+\csq@ltx@everypar=\toks15
+
+("C:\Users\Max\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.de
+f"
+File: csquotes.def 2019/05/10 v5.2e csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Users\Max\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.cf
+g"
+File: csquotes.cfg 
+))
+Package csquotes Info: Allocating character ".
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
@@ -344,27 +367,25 @@ Package biblatex Info: ... file 'german.lbx' found.
 lbx"
 File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
-
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
-\@quotelevel=\count279
-\@quotereset=\count280
-(Ausarbeitung.aux)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'german'.
+ (Ausarbeitung.aux)
 \openout1 = `Ausarbeitung.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -376,18 +397,23 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Ausarbeitung.bbl' found.
  (Ausarbeitung.bbl)
-Package biblatex Info: Reference section=0 on input line 13.
-Package biblatex Info: Reference segment=0 on input line 13.
+Package biblatex Info: Reference section=0 on input line 15.
+Package biblatex Info: Reference segment=0 on input line 15.
+Package csquotes Info: Redefining character " on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 15.
+(Font)              <12> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 15.
+(Font)              <8> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 15.
+(Font)              <6> on input line 17.
  [1
 
-{C:/Users/Max/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [1] (Ausarbei
-tung.toc
+{C:/Users/Max/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
+
+ []
+
+[1] (Ausarbeitung.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -397,40 +423,45 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout4 = `Ausarbeitung.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--43
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
-[3]
 
-LaTeX Warning: Citation 'BG89' undefined on input line 63.
+Underfull \hbox (badness 10000) in paragraph at lines 54--58
+
+ []
+
+[3] [4]
+
+LaTeX Warning: Citation 'BG89' undefined on input line 83.
 
 
-LaTeX Warning: Citation 'Wik1' undefined on input line 70.
-
-
-LaTeX Warning: Citation 'Wik2' undefined on input line 71.
-
-[4]
-Overfull \hbox (42.07681pt too wide) in paragraph at lines 74--74
-[]\OT1/cmr/m/n/10 Komplexpraktikum Zero-Knowledge-Verfahren. ``Zero-Knowledge-V
-erfahren''.
+Overfull \hbox (13.70674pt too wide) in paragraph at lines 92--92
+[]\OT1/cmr/m/n/10 Charles Rack-off und Da-niel R. Si-mon. []  Non-Interactive Z
+ero-Knowledge
  []
 
 
-Overfull \hbox (4.17802pt too wide) in paragraph at lines 74--74
-\OT1/cmtt/m/n/10 informatik / sya / ps / ressourcen / dateien / studium / mater
-ialien /
+Overfull \hbox (15.81659pt too wide) in paragraph at lines 92--92
+\OT1/cmr/m/n/10 In-for-ma-tik. []  Zero-Knowledge-Verfahren\. In: \OT1/cmr/m/it
+/10 Kom-plex-prak-ti-kum \OT1/cmr/m/n/10 (2011).
+ []
+
+
+Overfull \hbox (16.47247pt too wide) in paragraph at lines 92--92
+\OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : $\OT1/cmtt/m/n/10 https : / / tu -[] dres
+den . de / ing / informatik / sya / ps / ressourcen /
  []
 
 [5] (Ausarbeitung.aux)
@@ -447,13 +478,13 @@ Package logreq Info: Writing requests to 'Ausarbeitung.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 7970 strings out of 492895
- 145373 string characters out of 3124669
- 427887 words of memory out of 3000000
- 11841 multiletter control sequences out of 15000+200000
+ 8500 strings out of 492895
+ 154247 string characters out of 3124669
+ 447514 words of memory out of 3000000
+ 12363 multiletter control sequences out of 15000+200000
  8710 words of font info for 31 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 38i,6n,45p,1002b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,6n,45p,1002b,1653s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Max/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmbx10.pfb><C:/Users/Max/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb><C:/Users/Max/AppData/Local/Programs/MiKTeX 2.9/fonts/t
@@ -464,7 +495,7 @@ ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C
 :/Users/Max/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 tt10.pfb>
-Output written on Ausarbeitung.pdf (6 pages, 135297 bytes).
+Output written on Ausarbeitung.pdf (6 pages, 139181 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

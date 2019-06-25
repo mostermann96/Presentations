@@ -5,6 +5,8 @@
 \usepackage[backend=bibtex,style=alphabetic]{biblatex}
 \usepackage[german]{babel}
 \bibliography{lit}
+\usepackage{csquotes}
+\MakeOuterQuote{"}
 
 \title{Zero-Knowledge Proofs}
 \author{Max Ostermann}
@@ -18,8 +20,18 @@
 \pagenumbering{arabic}
 
 \section{Auszug}
+
+
+Diese Ausarbeitung ist eine Einf\"uhrung in Zero-Knowledge Proofs.
+Nach der Einf\"uhrung anhand von Alibabas H\"ohle und der Erkl\"arung der grundlegenden Definitionen wird die Protokolle von Zero-Knowledge Proofs untersucht.
+Bei dieser Betrachtung stellt man zum Einen fest, dass die arithmetischen Operationen für ehrliche Beweisteilnehmer einen sehr geringen Rechenaufwand haben und zum Anderen, dass f\"ur alle Sprachen in NP ein Zero-Knowledge Proof existiert \cite{GO94}. Trotzdem f\"allt auf, dass selbst bei leicht berechenbaren Operationen die reine Anzahl an Interaktionen ein potentielle Limitierung von Protokollen darstellen.
+Anhand der zus\"atzlichen M\"oglichkeiten, die sich durch non-interactive Zero-Knowledge Proofs bieten, werden m\"ogliche Anwendungen in modernen kryptographischen Systemen untersucht. Unter Ber\"ucksichtigung der Schw\"achen, wie zum Beispiel der "man-in-the-middle" Attacke, stellt sich heraus, dass Zero-Knowledge Proofs am Besten als Teilprotokolle verwendbar sind. Dies zeigt sich unter Anderem in neuen Blockchain Anwendungen, bei denen die Integrität der einzelnen Transaktionen durch ein eigenes Protokoll sichergestellt wird und Zero-Knowledge Proofs nur zum Schutz der Privatsph\"are der Nutzer dienen.
+\\
+
+
+---------------------------------------
 Diese Ausarbeitung ist eine Einführung in Zero-Knowledge Proofs.
-Zuerst wird die Grundidee und Motivation anhand des Beispiels von Alibabas H\"ohle(2) erl\"autert. Dabei werden die von der Rundenzahl abh\"angigen Wahrscheinlichkeiten von Vollst\"andigkeit und Korrektheit(3) veranschaulicht, sowie einen ersten Bezug auf die Simulierbarkeit zu nehmen. Anhand des interaktiven Protokolls der quadratischen Reste wird sowohl der Protokollablauf(4) verdeutlicht, als auch die Korrektheit der vorkommenden Formeln exemplarisch behandelt. Daraus folgt auch der Begriff der Simulierbarkeit(5), welcher für die F\"ahigkeit steht, ein Transkript der Beweisrunden ohne Kenntnis des Geheimnisses erzeugen zu können, das (fast) nicht von einem echten Transkript zu unterscheiden ist. Vor allem im Rahmen von Signaturen ist es jedoch nicht m\"oglich, die Herausforderungen(Challenges) der verifizierenden Partei einzuholen. Mit welchen Bedingungen diese generiert werden wird ebenfalls behandelt(6). 
+Zuerst wird die Grundidee und Motivation anhand des Beispiels von Alibabas H\"ohle(2) erl\"autert. Dabei werden die von der Rundenzahl abh\"angigen Wahrscheinlichkeiten von Vollst\"andigkeit und Korrektheit(3) veranschaulicht. Aus der Erklärung der Zero-Knowledge Eigenschaft folgt anschließend der Begriff der Simulierbarkeit(4), welcher für die F\"ahigkeit steht, ein Transkript der Beweisrunden ohne Kenntnis des Geheimnisses erzeugen zu können, das fast nicht von einem echten Transkript zu unterscheiden ist. Anhand des interaktiven Protokolls der quadratischen Reste wird sowohl der Protokollablauf(5) verdeutlicht, als auch die Korrektheit der vorkommenden Formeln exemplarisch behandelt. Im Rahmen von Signaturen ist es jedoch nicht m\"oglich, die Herausforderungen(Challenges) der verifizierenden Partei einzuholen. Mit welchen Bedingungen diese generiert werden wird ebenfalls behandelt(6). 
 Zuletzt werden die m\"oglichen Anwendungen(7) und die damit zusammenh\"angenden Angriffsvektoren(8) betrachtet. Dabei gilt die gr\"oßte Aufmerksamkeit der Schw\"ache gegen Man-in-the-middle Angriffe, die sich durch zeitliche Rahmenbedingungen stark reduzieren l\"asst. Abschlie\ss{}end wird nochmal veranschaulicht, wieso Zero-Knowledge Proofs sich auf Grund der vorher genannten Punkte besonders als Subprotokoll eignen.
 
 
@@ -31,7 +43,10 @@ Zuletzt werden die m\"oglichen Anwendungen(7) und die damit zusammenh\"angenden 
 
 \section{Einf\"uhrung}
 
-Schon im Jahr 1535 fand der italienische Mathematiker Niccolo Tartaglia die erste Verwendung für Zero-Knowledge Proofs. Er entdeckte eine Lösungsformel für Polynome 3. Grades und wollte dies beweisen, ohne, aus Furcht ein anderer Mathematiker würde es als seine Entdeckung verkaufen, diese Formel preiszugeben. Dazu schickte er Briefe an die Kollegen seines Faches, in denen er sie um Aufgaben bat, welche sie ihm wieder zukommen lie\ss{}en. Mit seiner L\"osungsformel konnte er die Aufgaben korrekt l\"osen, so beweisen, dass er im Besitz der korrekten Formel war und anschlie\ss{}end als seine Entdeckung vermarkten. \\
+In der Kryptographie geht es häufig darum, eine geheime Botschaft sicher zu übermitteln, ohne dass Dritte Zugriff auf ihren Inhalt haben. Möchte man aber stattdessen nur beweisen, dass man dieses Geheimnis kennt, ohne Informationen preiszugeben, bieten sich Zero-Knowledge Proofs an. Mit Zero-Knowledge Proofs beweist ein Beweiser einer verifizierenden Person sein Wissen über ein Geheimnis, ohne dass diese zusätzliche Informationen über das Geheimnis erlangen kann.
+\\
+
+Schon im Jahr 1535 fand der italienische Mathematiker Niccolo Tartaglia die erste Verwendung für Zero-Knowledge Proofs\cite{BSW}. Er entdeckte eine Lösungsformel für Polynome 3. Grades und wollte dies beweisen, ohne, aus Furcht ein anderer Mathematiker würde es als seine Entdeckung verkaufen, diese Formel preiszugeben. Dazu bat er einen Kollegen seines Fachs um Aufgaben, welche er ihm wieder zukommen lie\ss{}. Mit seiner L\"osungsformel konnte er die Aufgaben korrekt l\"osen, so beweisen, dass er im Besitz der korrekten Formel war und anschlie\ss{}end als seine Entdeckung vermarkten. \\
 
 Wie man hier erkennen kann, dienen Zero-Knowledge Proofs dazu, als Beweiser, auch Prover/ P genannt, eine
 verifizierende Person, auch Verifier/ V genannt, von der Kenntnis eines Geheimnisses zu überzeugen, ohne dieses preiszugeben. \\ 
@@ -45,30 +60,33 @@ Nun m\"ochte Bob dieses Ph\"anomen mit der Welt teilen und zeichnet seine Sicht 
 Stellt man die Videos, die Alice oder Bobs Freunde zeigen, nun gegen\"uber, zeigt sich, dass sich diese kaum voneinander unterscheiden und ein Beobachter dieser Videos keine M\"oglichkeit hat abzuw\"agen, von wem er denn das Geheimnis erlangen kann.
 Diese Eigenschaft wird unter "Simulierbarkeit"(5) n\"aher betrachtet und Alibabas H\"ohle wird in den danach folgenden Abschnitten zur Veranschaulichung entsprechend erweitert.
 
+
 \section{Grundlagen}
 \subsection{Definitionen}
 \subsection{Beweissysteme}
 \section{Simulierbarkeit}
 \section{Protokolle}
-\subsection{Auflistung}
-\subsection{Beispiel: Quadratische Reste}
+\subsection{Graphisomorphismen}
+\subsection{Quadratische Reste}
+\subsection{Graphfärbbarkeit}
+\subsection{Existenz von Zero-Knowledge Proofs zu jeder Sprache in NP }
 \section{Non-interactive Zero-Knowledge Proofs}
 \subsection{Motivation}
 \subsection{Fiat-Shamir Heuristik}
 \section{Moderne Anwendungen}
 \section{Angriffsvektoren}
 \section{Fazit}
+
+\newpage
 \section{Quellenverzeichnis}
 
 \nocite{BG89}
 \nocite{BM89}
-\nocite{GMIR85}
-\nocite{GO90}
+\nocite{GMR85}
+\nocite{GO94}
 \nocite{KZKP}
 \nocite{PrSa14}
 \nocite{RS91}
-\nocite{Wik1}
-\nocite{Wik2}
 
 \printbibliography
 

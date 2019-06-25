@@ -17,7 +17,7 @@
 \endgroup
 
 \datalist[entry]{anyt/global//global/global}
-  \entry{BM89}{article}{}
+  \entry{BM89}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=BM}{%
          family={Bellare},
@@ -32,6 +32,9 @@
          giveni={S\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
     \strng{namehash}{BMMS1}
     \strng{fullhash}{BMMS1}
     \field{labelnamesource}{author}
@@ -39,13 +42,49 @@
     \field{labelalpha}{BM89}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{pages}{547 \bibrangedash  560}
+    \field{booktitle}{Advances in Cryptology - CRYPT0 ‘89}
+    \field{pages}{547–560}
     \field{title}{Non-interactive oblivious transfer and applicaiions}
-    \field{journaltitle}{Advances in Cryptology - CRYPT0 ‘89}
     \field{year}{1989}
   \endentry
 
-  \entry{GMIR85}{article}{}
+  \entry{BSW}{book}{}
+    \name{author}{3}{}{%
+      {{hash=BA}{%
+         family={Beutelspacher},
+         familyi={B\bibinitperiod},
+         given={Albrecht},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schwenk},
+         familyi={S\bibinitperiod},
+         given={Jörg},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WKD}{%
+         family={Wolfenstetter},
+         familyi={W\bibinitperiod},
+         given={Klaus-Dieter},
+         giveni={K\bibinithyphendelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Vieweg Verlag}%
+    }
+    \strng{namehash}{BASJWKD1}
+    \strng{fullhash}{BASJWKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BSW06}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{edition}{sixth}
+    \field{title}{Moderne Verfahren der Kryptographie}
+    \field{year}{2006}
+  \endentry
+
+  \entry{GMR85}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=GS}{%
          family={Goldwasser},
@@ -59,24 +98,31 @@
          given={S},
          giveni={S},
       }}%
-      {{hash=RS}{%
+      {{hash=RC}{%
          family={Rackoff},
          familyi={R\bibinitperiod},
-         given={S},
-         giveni={S},
+         given={C},
+         giveni={C},
       }}%
     }
-    \strng{namehash}{GSMSRS1}
-    \strng{fullhash}{GSMSRS1}
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{GSMSRC1}
+    \strng{fullhash}{GSMSRC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelalpha}{GMR85}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \field{pages}{291 \bibrangedash  304}
-    \field{title}{The knowledge complexity of interactive proof-systems}
-    \field{journaltitle}{Proceedings of the seventeenth annual ACM symposium on
-  Theory of computin}
+    \field{booktitle}{Proceedings of the Seventeenth Annual ACM Symposium on
+  Theory of Computing}
+    \field{pages}{291\bibrangedash 304}
+    \field{series}{STOC '85}
+    \field{title}{The Knowledge Complexity of Interactive Proof-systems}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/22145.22178
+    \endverb
     \field{year}{1985}
   \endentry
 
@@ -109,19 +155,18 @@
     \verb /lec10.pdf
     \endverb
     \field{journaltitle}{CS 276 – Cryptography}
+    \field{urlday}{13}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
   \endentry
 
-  \entry{GO90}{article}{}
-    \name{author}{2}{}{%
-      {{hash=GO}{%
+  \entry{GO94}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GYOO}{%
          family={Goldreich},
          familyi={G\bibinitperiod},
-         given={Oded},
-         giveni={O\bibinitperiod},
-      }}%
-      {{hash=OY}{%
-         family={Oren},
-         familyi={O\bibinitperiod},
+         suffix={Odedand\bibnamedelima Oren},
+         suffixi={O\bibinitperiod\bibinitdelim O\bibinitperiod},
          given={Yair},
          giveni={Y\bibinitperiod},
       }}%
@@ -130,16 +175,21 @@
     \strng{fullhash}{GOOY1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{GO90}
+    \field{labelalpha}{Gol94}
     \field{sortinit}{G}
     \field{sortinithash}{G}
+    \field{number}{1}
     \field{pages}{1\bibrangedash 32}
-    \field{title}{Definitions and Properties of Zero-Knowledge Proof Systems}
-    \field{journaltitle}{Journal of Cryptography}
-    \field{year}{1990}
+    \field{title}{Definitions and properties of zero-knowledge proof systems}
+    \verb{url}
+    \verb https://doi.org/10.1007/BF00195207
+    \endverb
+    \field{volume}{7}
+    \field{journaltitle}{Journal of Cryptology}
+    \field{year}{1994}
   \endentry
 
-  \entry{GQ89}{article}{}
+  \entry{GQ89}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=QJJ}{%
          family={Quisquater},
@@ -154,64 +204,89 @@
          giveni={L\bibinitperiod},
       }}%
     }
+    \name{editor}{1}{}{%
+      {{hash=BG}{%
+         family={Brassard},
+         familyi={B\bibinitperiod},
+         given={Gilles},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer New York}%
+    }
     \strng{namehash}{QJJGL1}
     \strng{fullhash}{QJJGL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{QG89}
+    \field{labelalpha}{QG90}
     \field{sortinit}{Q}
     \field{sortinithash}{Q}
-    \field{pages}{628 \bibrangedash  631}
-    \field{title}{How to explain Zero-Knowledge Protocols to your children}
-    \field{journaltitle}{Advances in Cryptology - CRYPT0 ‘89}
-    \field{year}{1989}
+    \field{booktitle}{Advances in Cryptology --- CRYPTO' 89 Proceedings}
+    \field{pages}{628\bibrangedash 631}
+    \field{title}{How to Explain Zero-Knowledge Protocols to Your Children}
+    \field{year}{1990}
   \endentry
 
-  \entry{RS91}{article}{}
+  \entry{RS91}{inproceedings}{}
     \name{author}{2}{}{%
-      {{hash=RS}{%
+      {{hash=RC}{%
          family={Rackoff},
          familyi={R\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
       }}%
       {{hash=SDR}{%
          family={Simon},
          familyi={S\bibinitperiod},
-         given={D.\bibnamedelima R.},
+         given={Daniel\bibnamedelima R.},
          giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
       }}%
     }
-    \strng{namehash}{RSSDR1}
-    \strng{fullhash}{RSSDR1}
+    \name{editor}{1}{}{%
+      {{hash=FJ}{%
+         family={Feigenbaum},
+         familyi={F\bibinitperiod},
+         given={Joan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \strng{namehash}{RCSDR1}
+    \strng{fullhash}{RCSDR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{RS91}
+    \field{labelalpha}{RS92}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \field{pages}{433 \bibrangedash  445}
+    \field{booktitle}{Advances in Cryptology --- CRYPTO '91}
+    \field{pages}{433\bibrangedash 444}
     \field{title}{Non-Interactive Zero-Knowledge Proof of Knowledge and Chosen
   Ciphertext Attack}
-    \field{journaltitle}{Advances in Cryptology - CRYPT0 ‘91}
-    \field{year}{1991}
+    \field{year}{1992}
   \endentry
 
   \entry{KZKP}{article}{}
     \name{author}{1}{}{%
-      {{hash=ZKVK}{%
-         family={Zero-Knowledge-Verfahren},
-         familyi={Z\bibinithyphendelim K\bibinithyphendelim V\bibinitperiod},
-         given={Komplexpraktikum},
-         giveni={K\bibinitperiod},
+      {{hash=TDLDuDFI}{%
+         family={TU\bibnamedelima Dresden},
+         familyi={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+         suffix={Fakultät\bibnamedelima Informatik},
+         suffixi={F\bibinitperiod\bibinitdelim I\bibinitperiod},
+         given={Lehrstuhl Datenschutz und\bibnamedelima Datensicherheit},
+         giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  u\bibinitperiod\bibinitdelim D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{ZKVK1}
-    \strng{fullhash}{ZKVK1}
+    \strng{namehash}{TDFILDuD1}
+    \strng{fullhash}{TDFILDuD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{ZKV11}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
+    \field{labelalpha}{TD11}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
     \field{title}{Zero-Knowledge-Verfahren}
     \verb{url}
     \verb https://tu-dresden.de/ing/informatik/sya/ps/ressourcen/dateien/studiu
@@ -219,6 +294,9 @@
     \endverb
     \field{journaltitle}{Komplexpraktikum}
     \field{year}{2011}
+    \field{urlday}{18}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
   \endentry
 \enddatalist
 \endinput

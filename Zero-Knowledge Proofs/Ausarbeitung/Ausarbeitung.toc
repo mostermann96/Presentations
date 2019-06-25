@@ -15,9 +15,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Protokolle}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Auflistung}{4}% 
+\contentsline {subsection}{\numberline {5.1}Graphisomorphismen}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Beispiel: Quadratische Reste}{4}% 
+\contentsline {subsection}{\numberline {5.2}Quadratische Reste}{4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Graphf\IeC {\"a}rbbarkeit}{4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4}Existenz von Zero-Knowledge Proofs zu jeder Sprache in NP }{4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Non-interactive Zero-Knowledge Proofs}{4}% 
 \defcounter {refsection}{0}\relax 
@@ -31,4 +35,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9}Fazit}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Quellenverzeichnis}{4}% 
+\contentsline {section}{\numberline {10}Quellenverzeichnis}{5}% 
